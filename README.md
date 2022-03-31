@@ -1,1 +1,1 @@
-# AlgorythmenUndDatenstrukturen
+# AlgorithmenUndDatenstrukturen
