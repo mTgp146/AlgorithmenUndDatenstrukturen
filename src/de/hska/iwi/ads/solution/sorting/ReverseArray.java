@@ -9,11 +9,7 @@ public class ReverseArray<E extends Comparable<E>> implements Reverse<E> {
 		
 		E [] b = a.clone();
 		
-		for (int i = from; i <= to; i++) {
-			b[i] = a[i];
-		}
-		
-		for (int i = from; i <= to; i++) {
+		for (int i = from; i <= to; i++) {	// move values from b reversed in a
 			a[i] = b[to - (i - from)];
 		}
 	}

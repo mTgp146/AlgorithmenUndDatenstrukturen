@@ -3,8 +3,6 @@ package de.hska.iwi.ads.solution.sorting;
 import static org.junit.Assert.*;
 import org.junit.jupiter.api.Test;
 
-
-
 public class MergesortTest {
 
 	public <E extends Comparable<E>> Mergesort<E> createMergesort() {
