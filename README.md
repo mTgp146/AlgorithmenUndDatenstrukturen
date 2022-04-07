@@ -1,3 +1,3 @@
 # AlgorithmenUndDatenstrukturen
 
-Lösungen zu den Rechnerübung in Algorithmen und Datenstrukturen.
+Lösungen zu der Rechnerübung in Algorithmen und Datenstrukturen.
