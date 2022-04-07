@@ -10,6 +10,15 @@ public class ReverseArrayTest {
 	}
 	
 	@Test
+	void testReverseArray0() {
+		Integer[] unreversed = { 3, 2, 1};
+		Integer[] expected   = { 1, 2, 3};
+		ReverseArray<Integer> reverseArray = createReverseArray();
+		reverseArray.reverse(unreversed, 0, 2);
+		assertArrayEquals( expected, unreversed);	
+	}
+	
+	@Test
 	void testReverseArray1() {
 		Integer[] unreversed = { 3, 2, 1};
 		Integer[] expected   = { 3, 1, 2};

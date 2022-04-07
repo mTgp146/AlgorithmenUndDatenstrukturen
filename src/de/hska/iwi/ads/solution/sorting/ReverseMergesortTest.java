@@ -15,7 +15,7 @@ public class ReverseMergesortTest {
 		Integer[] unsorted = { 5, 4, 3, 2, 1};
 		Integer[] expected = { 5, 4, 3, 2, 1};
 		ReverseMergesort<Integer> reverseMergesort = createReverseMergesort();
-		reverseMergesort.reverseMergesort(unsorted, 1, 4);
+		reverseMergesort.mergesort(unsorted, 1, 4);
 		assertArrayEquals( expected, unsorted);
 	}
 	
@@ -24,7 +24,7 @@ public class ReverseMergesortTest {
 		Integer[] unsorted = { 7, 4, 3, 2, 8, 1, 9, 7};
 		Integer[] expected = { 7, 9, 8, 4, 3, 2, 1, 7};
 		ReverseMergesort<Integer> reverseMergesort = createReverseMergesort();
-		reverseMergesort.reverseMergesort(unsorted, 1, 6);
+		reverseMergesort.mergesort(unsorted, 1, 6);
 		assertArrayEquals( expected, unsorted);
 	}
 	
@@ -33,7 +33,7 @@ public class ReverseMergesortTest {
 		Integer[] unsorted = { 7, 4, 3, 2, 8, 1, 9, 7, 10, 11, 1};
 		Integer[] expected = { 7, 4, 10, 9, 8, 7, 3, 2, 1, 11, 1};
 		ReverseMergesort<Integer> reverseMergesort = createReverseMergesort();
-		reverseMergesort.reverseMergesort(unsorted, 2, 8);
+		reverseMergesort.mergesort(unsorted, 2, 8);
 		assertArrayEquals( expected, unsorted);
 	}
 	
@@ -42,7 +42,7 @@ public class ReverseMergesortTest {
 		Integer[] unsorted = { 3, 2, 5, 1, 4};
 		Integer[] expected = { 5, 4, 3, 2, 1};
 		ReverseMergesort<Integer> reverseMergesort = createReverseMergesort();
-		reverseMergesort.reverseMergesort(unsorted, 0, 4);
+		reverseMergesort.mergesort(unsorted, 0, 4);
 		assertArrayEquals( expected, unsorted);
 	}
 }
